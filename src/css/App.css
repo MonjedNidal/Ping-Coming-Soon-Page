@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Blue: hsl(223, 87%, 63%);
+
+  /* ### Secondary */
+
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+.App {
+  text-align: center;
+  overflow: hidden;
+  font-family: "Libre Franklin", sans-serif;
+  height: fit-content;
+}
+.logo {
+  width: 6rem;
+  height: 2rem;
+  display: inline-block;
+}
+h1 {
+  color: var(--Gray);
+}
+h1 span {
+  color: var(--VeryDarkBlue) !important;
+  font-weight: 700;
+}
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: hsl(0deg 2.39% 36.4%);
+}
+form {
+  width: 80vw;
+  align-self: center;
+}
+input {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--PaleBlue);
+  font-size: 13px;
+}
+input::placeholder {
+  opacity: 0.8 !important ;
+  color: var(--PaleBlue);
+}
+input::after {
+  border: unset;
+}
+.errorMsg {
+  margin-top: 0.2rem;
+  text-align: start;
+  position: absolute;
+  top: 2rem;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--LightRed);
+}
+.invalid {
+  border: 1px solid var(--LightRed);
+}
+.mainBtn {
+  cursor: pointer !important;
+  background-color: var(--Blue);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.4rem 0.4rem;
+  border-radius: 20px;
+  margin-left: 1rem;
+  box-shadow: 0px 5px 5px var(--PaleBlue);
+}
+
+.mainBtn:hover {
+  background-color: hsl(223, 82%, 65%);
+}
+
+.illustration {
+  margin: 4rem 0rem;
+  width: 80vw;
+  align-self: center;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin: 0.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--VeryDarkBlue);
+}
+.icon:hover {
+  background-color: var(--Blue);
+  cursor: pointer;
+  color: white;
+  border: unset;
+}
+
+#icon1 {
+  background-image: url("../images/facebook.svg");
+}
+#icon2 {
+  background-image: url("../images/twitter.svg");
+}
+#icon3 {
+  background-image: url("../images/instagram.svg");
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+@media (max-width: 495px) {
+  .mainBtn {
+    font-size: 0.8em;
+    margin-left: 0rem;
+    width: 60vw;
+  }
+  input {
+    width: 60vw;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    flex-direction: column !important;
+  }
+  .attribution {
+    margin: 0rem 1rem;
+  }
+}
