@@ -8,8 +8,8 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-3column-preview-card-Q7x_5LPSjl](https://www.frontendmentor.io/solutions/responsive-3column-preview-card-Q7x_5LPSjl)
+- Live Site URL: [https://monjed-ping-coming-soon.netlify.app/](https://monjed-ping-coming-soon.netlify.app/)
 
 ## My process
 
